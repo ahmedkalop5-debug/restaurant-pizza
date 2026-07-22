@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <title>Ristorante Italiano</title>
+</head>
+
+<body class="font-[Poppins] bg-[#FFF8EE] text-[#222222]">
+
+    <!-- Navbar -->
+
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <nav
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10 py-5">
+
+        <!-- Logo -->
+        <a href="#"
+            class="text-3xl font-extrabold tracking-wide text-[#1F6F43]">
+            Ristorante
+            <span class="text-[#D62828]">.</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul
+            class="hidden lg:flex items-center gap-10 text-[17px] font-medium">
+
+            <li>
+                <a href="#"
+                    class="relative after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#D62828] after:duration-300 hover:after:w-full">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#menu"
+                    class="relative after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#D62828] after:duration-300 hover:after:w-full">
+                    Menu
+                </a>
+            </li>
+
+            <li>
+                <a href="#about"
+                    class="relative after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#D62828] after:duration-300 hover:after:w-full">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery"
+                    class="relative after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#D62828] after:duration-300 hover:after:w-full">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a href="#reviews"
+                    class="relative after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#D62828] after:duration-300 hover:after:w-full">
+                    Reviews
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact"
+                    class="relative after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#D62828] after:duration-300 hover:after:w-full">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-5">
+
+            <!-- Button -->
+            <a href="#"
+                class="hidden lg:flex bg-[#D62828] text-white px-6 py-3 rounded-full hover:bg-[#1F6F43] duration-300 shadow-lg hover:scale-105">
+                Book Table
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn"
+                class="lg:hidden text-3xl text-[#1F6F43]">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-menu"
+        class="hidden lg:hidden bg-white shadow-xl">
+
+        <ul
+            class="flex flex-col items-center gap-8 py-10 text-lg font-medium">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#menu">Menu</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+            <li><a href="#reviews">Reviews</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+
+                <a href="#"
+                    class="bg-[#D62828] text-white px-6 py-3 rounded-full">
+                    Book Table
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+
+    <!-- Hero -->
+
+    <section
+    class="min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+
+    <div
+        class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-20 items-center">
+
+        <!-- ================= Left ================= -->
+
+        <div>
+
+            <span
+                class="inline-block bg-green-100 text-[#1F6F43] px-5 py-2 rounded-full font-semibold">
+
+                🇮🇹 Authentic Italian Cuisine
+
+            </span>
+
+            <h1
+                class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-8">
+
+                Fresh Pizza
+
+                <span class="text-[#D62828]">
+
+                    Made
+
+                </span>
+
+                With Love
+
+            </h1>
+
+            <p
+                class="text-gray-600 text-lg leading-8 mt-8 max-w-xl">
+
+                Experience the authentic taste of Italy with handcrafted pizzas,
+                fresh ingredients, and traditional recipes prepared by our
+                professional chefs every single day.
+
+            </p>
+
+            <!-- Buttons -->
+
+            <div
+                class="flex flex-wrap gap-5 mt-10">
+
+                <a href="#menu"
+
+                    class="bg-[#D62828] text-white px-8 py-4 rounded-full hover:bg-[#1F6F43] duration-300 shadow-xl hover:scale-105">
+
+                    Explore Menu
+
+                </a>
+
+                <a href="#contact"
+
+                    class="border-2 border-[#1F6F43] text-[#1F6F43] px-8 py-4 rounded-full hover:bg-[#1F6F43] hover:text-white duration-300">
+
+                    Book Table
+
+                </a>
+
+            </div>
+
+            <!-- Rating -->
+
+            <div
+                class="flex items-center gap-4 mt-12">
+
+                <div
+                    class="flex text-yellow-400 text-xl">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <p
+                    class="text-gray-600">
+
+                    <span class="font-bold">
+
+                        4.9
+
+                    </span>
+
+                    (12K Happy Customers)
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Right ================= -->
+
+        <div
+            class="relative flex justify-center">
+
+            <!-- Background Circle -->
+
+            <div
+                class="absolute w-[430px] h-[430px] rounded-full bg-[#1F6F43]/10">
+            </div>
+
+            <!-- Pizza -->
+
+            <img
+
+                src="./assets/imges/pizza-heroo.png"
+
+                alt="Pizza"
+
+                class="floating relative z-20 w-[480px] animate-spin-slow hover:scale-105 duration-500">
+
+            <!-- Chef Card -->
+
+            <div
+                class="absolute left-0 top-20 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 z-30">
+
+                <i
+                    class="fa-solid fa-user-chef text-3xl text-[#D62828]"></i>
+
+                <div>
+
+                    <h3
+                        class="font-bold">
+
+                        Professional Chef
+
+                    </h3>
+
+                    <p
+                        class="text-sm text-gray-500">
+
+                        15+ Years Experience
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Delivery Card -->
+
+            <div
+                class="absolute right-0 bottom-16 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 z-30">
+
+                <i
+                    class="fa-solid fa-truck-fast text-3xl text-[#1F6F43]"></i>
+
+                <div>
+
+                    <h3
+                        class="font-bold">
+
+                        Fast Delivery
+
+                    </h3>
+
+                    <p
+                        class="text-sm text-gray-500">
+
+                        30 Minutes
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Features -->
+
+
+    <section class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+
+            <span
+                class="text-[#D62828] font-semibold uppercase tracking-widest">
+
+                Why Choose Us
+
+            </span>
+
+            <h2
+                class="text-4xl md:text-5xl font-bold mt-4">
+
+                We Serve The Best
+                <span class="text-[#1F6F43]">
+                    Italian Food
+                </span>
+
+            </h2>
+
+            <p
+                class="text-gray-500 mt-5 max-w-2xl mx-auto leading-8">
+
+                Fresh ingredients, experienced chefs, fast delivery, and an unforgettable Italian dining experience.
+
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Card -->
+
+            <div
+                class="bg-[#FFF8EE] rounded-3xl p-8 text-center shadow-lg hover:-translate-y-3 duration-300">
+
+                <div
+                    class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto">
+
+                    <i
+                        class="fa-solid fa-pizza-slice text-4xl text-[#D62828]"></i>
+
+                </div>
+
+                <h3
+                    class="text-2xl font-bold mt-6">
+
+                    Fresh Pizza
+
+                </h3>
+
+                <p
+                    class="text-gray-500 mt-4 leading-7">
+
+                    Prepared every day with fresh vegetables, premium cheese and handmade dough.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div
+                class="bg-[#FFF8EE] rounded-3xl p-8 text-center shadow-lg hover:-translate-y-3 duration-300">
+
+                <div
+                    class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+
+                    <i
+                        class="fa-solid fa-user-chef text-4xl text-[#1F6F43]"></i>
+
+                </div>
+
+                <h3
+                    class="text-2xl font-bold mt-6">
+
+                    Expert Chefs
+
+                </h3>
+
+                <p
+                    class="text-gray-500 mt-4 leading-7">
+
+                    Our chefs have years of experience in authentic Italian cuisine.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div
+                class="bg-[#FFF8EE] rounded-3xl p-8 text-center shadow-lg hover:-translate-y-3 duration-300">
+
+                <div
+                    class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto">
+
+                    <i
+                        class="fa-solid fa-truck-fast text-4xl text-yellow-500"></i>
+
+                </div>
+
+                <h3
+                    class="text-2xl font-bold mt-6">
+
+                    Fast Delivery
+
+                </h3>
+
+                <p
+                    class="text-gray-500 mt-4 leading-7">
+
+                    Hot and delicious meals delivered to your doorstep in no time.
+
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div
+                class="bg-[#FFF8EE] rounded-3xl p-8 text-center shadow-lg hover:-translate-y-3 duration-300">
+
+                <div
+                    class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+
+                    <i
+                        class="fa-solid fa-award text-4xl text-blue-500"></i>
+
+                </div>
+
+                <h3
+                    class="text-2xl font-bold mt-6">
+
+                    Quality Food
+
+                </h3>
+
+                <p
+                    class="text-gray-500 mt-4 leading-7">
+
+                    Every dish is prepared with the highest quality ingredients and great attention to detail.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>  
+
+
+    <!-- Menu -->
+        
+    <section id="menu" class="py-24 bg-[#FFF8EE]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+
+            <span class="text-[#D62828] font-semibold uppercase tracking-[3px]">
+                Popular Menu
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold mt-4">
+
+                Our Delicious
+                <span class="text-[#1F6F43]">
+                    Italian Dishes
+                </span>
+
+            </h2>
+
+            <p class="text-gray-500 mt-5 max-w-2xl mx-auto leading-8">
+
+                Enjoy our handcrafted Italian meals made with fresh ingredients
+                and traditional recipes.
+
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+    <div class="relative overflow-hidden">
+
+        <img
+            src="./assets/imges/margherita.png"
+            class="w-full h-72 object-cover hover:scale-110 duration-500">
+
+        <button
+            class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow">
+
+            <i class="favorite fa-regular fa-heart text-red-500 cursor-pointer"></i>
+
+        </button>
+
+    </div>
+
+    <div class="p-7">
+
+        <div class="flex justify-between items-center">
+
+            <h3 class="text-2xl font-bold">
+
+                Italian Pizza
+
+            </h3>
+
+            <span class="font-bold text-[#D62828]">
+
+                $22
+
+            </span>
+
+        </div>
+
+        <p class="text-gray-500 mt-4 leading-7">
+
+            Fresh mozzarella, basil leaves,
+            homemade tomato sauce.
+
+        </p>
+
+        <div
+            class="flex justify-between items-center mt-6">
+
+            <div class="flex items-center gap-2">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <span class="font-semibold">
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <button
+                class="bg-[#D62828] text-white px-5 py-3 rounded-full hover:bg-[#1F6F43] duration-300">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div
+class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+    <div class="relative overflow-hidden">
+
+        <img
+            src="./assets/imges/pasta.jpg"
+            class="w-full h-72 object-cover hover:scale-110 duration-500">
+
+        <button
+            class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow">
+
+            <i class="favorite fa-regular fa-heart text-red-500 cursor-pointer"></i>
+
+        </button>
+
+    </div>
+
+    <div class="p-7">
+
+        <div class="flex justify-between items-center">
+
+            <h3 class="text-2xl font-bold">
+
+                Creamy Pasta
+
+            </h3>
+
+            <span class="font-bold text-[#D62828]">
+
+                $19
+
+            </span>
+
+        </div>
+
+        <p class="text-gray-500 mt-4 leading-7">
+
+            Creamy Alfredo sauce, fresh pasta,
+            grilled chicken.
+
+        </p>
+
+        <div
+            class="flex justify-between items-center mt-6">
+
+            <div class="flex items-center gap-2">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <span class="font-semibold">
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <button
+                class="bg-[#D62828] text-white px-5 py-3 rounded-full hover:bg-[#1F6F43] duration-300">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div
+class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+    <div class="relative overflow-hidden">
+
+        <img
+            src="./assets/imges/pasta-2.jpg"
+            class="w-full h-72 object-cover hover:scale-110 duration-500">
+
+        <button
+            class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow">
+
+            <i class="favorite fa-regular fa-heart text-red-500 cursor-pointer"></i>
+
+        </button>
+
+    </div>
+
+    <div class="p-7">
+
+        <div class="flex justify-between items-center">
+
+            <h3 class="text-2xl font-bold">
+
+                Lasagna
+
+            </h3>
+
+            <span class="font-bold text-[#D62828]">
+
+                $21
+
+            </span>
+
+        </div>
+
+        <p class="text-gray-500 mt-4 leading-7">
+
+            Layers of pasta, rich meat sauce,
+            creamy béchamel, and melted cheese.
+            
+
+        </p>
+
+        <div
+            class="flex justify-between items-center mt-6">
+
+            <div class="flex items-center gap-2">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <span class="font-semibold">
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <button
+                class="bg-[#D62828] text-white px-5 py-3 rounded-full hover:bg-[#1F6F43] duration-300">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div
+class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+    <div class="relative overflow-hidden">
+
+        <img
+            src="./assets/imges/peproni.jpg"
+            class="w-full h-72 object-cover hover:scale-110 duration-500">
+
+        <button
+            class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow">
+
+            <i class="favorite fa-regular fa-heart text-red-500 cursor-pointer"></i>
+
+        </button>
+
+    </div>
+
+    <div class="p-7">
+
+        <div class="flex justify-between items-center">
+
+            <h3 class="text-2xl font-bold">
+
+                Pepperoni Pizza
+
+            </h3>
+
+            <span class="font-bold text-[#D62828]">
+
+                $21 
+
+            </span>
+
+        </div>
+
+        <p class="text-gray-500 mt-4 leading-7">
+
+            Spicy pepperoni, mozzarella cheese,
+            homemade tomato sauce.
+            
+
+        </p>
+
+        <div
+            class="flex justify-between items-center mt-6">
+
+            <div class="flex items-center gap-2">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <span class="font-semibold">
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <button
+                class="bg-[#D62828] text-white px-5 py-3 rounded-full hover:bg-[#1F6F43] duration-300">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div> <div
+class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+    <div class="relative overflow-hidden">
+
+        <img
+            src="./assets/imges/lasagnia3.jpg"
+            class="w-full h-72 object-cover hover:scale-110 duration-500">
+
+        <button
+            class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white flex items-center justify-center shadow">
+
+            <i class="favorite fa-regular fa-heart text-red-500 cursor-pointer"></i>
+
+        </button>
+
+    </div>
+
+    <div class="p-7">
+
+        <div class="flex justify-between items-center">
+
+            <h3 class="text-2xl font-bold">
+
+                Lasagna
+
+            </h3>
+
+            <span class="font-bold text-[#D62828]">
+
+                $22
+
+            </span>
+
+        </div>
+
+        <p class="text-gray-500 mt-4 leading-7">
+
+            lasagna with layers of pasta, rich meat sauce,
+            creamy béchamel, and melted cheese.
+            
+
+        </p>
+
+        <div
+            class="flex justify-between items-center mt-6">
+
+            <div class="flex items-center gap-2">
+
+                <i class="fa-solid fa-star text-yellow-400"></i>
+
+                <span class="font-semibold">
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <button
+                class="bg-[#D62828] text-white px-5 py-3 rounded-full hover:bg-[#1F6F43] duration-300">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- About -->
+        
+    <section id="about" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Image -->
+
+            <div class="relative">
+
+                <div
+                    class="absolute -top-6 -left-6 w-full h-full bg-[#1F6F43] rounded-3xl">
+                </div>
+
+                <img
+                    src="./assets/imges/chef.2jpg.jfif"
+                    alt="Chef"
+                    class="relative z-10 rounded-3xl shadow-2xl w-full object-cover">
+
+            </div>
+
+            <!-- Content -->
+
+            <div>
+
+                <span
+                    class="text-[#D62828] uppercase tracking-[3px] font-semibold">
+
+                    About Us
+
+                </span>
+
+                <h2
+                    class="text-4xl md:text-5xl font-bold mt-5 leading-tight">
+
+                    Bringing The Authentic Taste Of
+                    <span class="text-[#1F6F43]">
+                        Italy
+                    </span>
+
+                </h2>
+
+                <p
+                    class="text-gray-600 mt-8 leading-8">
+
+                    Our restaurant has been serving authentic Italian cuisine
+                    using fresh ingredients and traditional family recipes.
+                    Every meal is prepared with passion to give our guests an
+                    unforgettable dining experience.
+
+                </p>
+
+                <p
+                    class="text-gray-600 mt-5 leading-8">
+
+                    From handcrafted pizzas to creamy pasta and delicious
+                    desserts, we combine quality ingredients with years of
+                    culinary expertise.
+
+                </p>
+
+                <!-- Statistics -->
+
+                <div
+                    class="grid grid-cols-3 gap-6 mt-10">
+
+                    <div
+                        class="text-center bg-[#FFF8EE] rounded-2xl p-5">
+
+                        <h3
+    class="counter text-3xl font-bold text-[#D62828]"
+    data-target="15">
+
+    0
+
+</h3>
+
+                        <p
+                            class="text-gray-500 mt-2">
+
+                            Years
+
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="text-center bg-[#FFF8EE] rounded-2xl p-5">
+
+                        <h3
+    class="counter text-3xl font-bold text-[#D62828]"
+    data-target="12000">
+
+                        0
+
+                </h3>
+
+                        <p
+                            class="text-gray-500 mt-2">
+
+                            Customers
+
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="text-center bg-[#FFF8EE] rounded-2xl p-5">
+
+                        <h3
+    class="counter text-3xl font-bold text-[#D62828]"
+    data-target="50">
+
+                    0
+
+                    </h3>
+
+                        <p
+                            class="text-gray-500 mt-2">
+
+                            Dishes
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+
+                <a
+                    href="#contact"
+                    class="inline-block mt-10 bg-[#D62828] text-white px-8 py-4 rounded-full hover:bg-[#1F6F43] duration-300 shadow-lg hover:scale-105">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Gallery -->
+        
+            <section id="gallery" class="py-24 bg-[#FFF8EE]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+
+            <span class="text-[#D62828] uppercase tracking-[3px] font-semibold">
+
+                Our Gallery
+
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold mt-4">
+
+                A Look Inside Our
+                <span class="text-[#1F6F43]">
+                    Restaurant
+                </span>
+
+            </h2>
+
+            <p class="text-gray-500 mt-5 max-w-2xl mx-auto leading-8">
+
+                Discover the atmosphere, delicious dishes, and memorable moments
+                that make every visit special.
+
+            </p>
+
+        </div>
+
+        <!-- Images -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Image 1 -->
+
+            <div class="group overflow-hidden rounded-3xl lg:col-span-2">
+
+                <div class="relative">
+
+                    <img
+                        src="./assets/imges/gallery.jpg"
+                        class="gallery-img cursor-pointer w-full h-[500px] object-cover group-hover:scale-110 duration-500">
+
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center">
+
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-4xl"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Image 2 -->
+
+            <div class="group overflow-hidden rounded-3xl">
+
+                <div class="relative">
+
+                    <img
+                        src="./assets/imges/gallery-2.jpg"
+                        class="gallery-img cursor-pointer w-full h-[500px] object-cover group-hover:scale-110 duration-500">
+
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center">
+
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Image 3 -->
+
+            <div class="group overflow-hidden rounded-3xl">
+
+                <div class="relative">
+
+                    <img
+                        src="./assets/imges/gallary-3.jpg"
+                        class="gallery-img cursor-pointer w-full h-[500px] object-cover group-hover:scale-110 duration-500">
+
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center">
+
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Image 4 -->
+
+            <div class="group overflow-hidden rounded-3xl lg:col-span-2">
+
+                <div class="relative">
+
+                    <img
+                        src="./assets/imges/gallary-4.jpg"
+                        class="gallery-img cursor-pointer w-full h-[500px] object-cover group-hover:scale-110 duration-500">
+
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center">
+
+                        <i class="fa-solid fa-magnifying-glass-plus text-white text-4xl"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Testimonials -->
+
+    <section id="reviews" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+
+            <span class="text-[#D62828] uppercase tracking-[3px] font-semibold">
+                Testimonials
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold mt-4">
+
+                What Our
+                <span class="text-[#1F6F43]">
+                    Customers Say
+                </span>
+
+            </h2>
+
+            <p class="text-gray-500 mt-5 max-w-2xl mx-auto leading-8">
+
+                We are proud to serve thousands of happy customers every year.
+
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+
+            <div class="bg-[#FFF8EE] rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+                <div class="flex text-yellow-400 mb-6">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <p class="text-gray-600 leading-8 italic">
+
+                    "Absolutely the best pizza I've ever had. The ingredients were fresh,
+                    the service was excellent, and the atmosphere was amazing."
+
+                </p>
+
+                <div class="flex items-center gap-4 mt-8">
+
+                    <img
+                        src="./assets/imges/costomer-3.jpg"
+                        alt="Customer"
+                        class="w-16 h-16 rounded-full object-cover border-4 border-white shadow">
+
+                    <div>
+
+                        <h4 class="font-bold text-lg">
+
+                            ED Wilson
+
+                        </h4>
+
+                        <span class="text-gray-500">
+
+                            Food Blogger
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="bg-[#FFF8EE] rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+                <div class="flex text-yellow-400 mb-6">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <p class="text-gray-600 leading-8 italic">
+
+                    "Everything was perfect! Fast delivery, delicious food,
+                    and the staff were incredibly friendly."
+
+                </p>
+
+                <div class="flex items-center gap-4 mt-8">
+
+                    <img
+                        src="./assets/imges/costomer-2.jpg"
+                        alt="Customer"
+                        class="w-16 h-16 rounded-full object-cover border-4 border-white shadow">
+
+                    <div>
+
+                        <h4 class="font-bold text-lg">
+
+                            Michael Brown
+
+                        </h4>
+
+                        <span class="text-gray-500">
+
+                            Customer
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="bg-[#FFF8EE] rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+                <div class="flex text-yellow-400 mb-6">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <p class="text-gray-600 leading-8 italic">
+
+                    "A wonderful Italian experience. Every dish was full of flavor,
+                    and I'll definitely come back again."
+
+                </p>
+
+                <div class="flex items-center gap-4 mt-8">
+
+                    <img
+                        src="./assets/imges/costomer-3.jpg"
+                        alt="Customer"
+                        class="w-16 h-16 rounded-full object-cover border-4 border-white shadow">
+
+                    <div>
+
+                        <h4 class="font-bold text-lg">
+
+                            Gordon Taylor
+
+                        </h4>
+
+                        <span class="text-gray-500">
+
+                            Restaurant Lover
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="py-24 bg-[#FFF8EE]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+
+            <span class="text-[#D62828] uppercase tracking-[3px] font-semibold">
+                Contact Us
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold mt-4">
+
+                We'd Love To
+                <span class="text-[#1F6F43]">
+                    Hear From You
+                </span>
+
+            </h2>
+
+            <p class="text-gray-500 mt-5 max-w-2xl mx-auto leading-8">
+
+                Have a question, want to reserve a table, or simply say hello?
+                Send us a message and we'll get back to you as soon as possible.
+
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+
+            <!-- ================= Left ================= -->
+
+            <div class="space-y-6">
+
+                <!-- Address -->
+
+                <div class="flex items-start gap-5 bg-white p-6 rounded-3xl shadow-lg">
+
+                    <div
+                        class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+
+                        <i class="fa-solid fa-location-dot text-[#D62828] text-2xl"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold">
+
+                            Address
+
+                        </h3>
+
+                        <p class="text-gray-500 mt-2">
+
+                            25 Italian Street, Florence, Italy
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="flex items-start gap-5 bg-white p-6 rounded-3xl shadow-lg">
+
+                    <div
+                        class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+
+                        <i class="fa-solid fa-phone text-[#1F6F43] text-2xl"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold">
+
+                            Phone
+
+                        </h3>
+
+                        <p class="text-gray-500 mt-2">
+
+                            +39 123 456 789
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="flex items-start gap-5 bg-white p-6 rounded-3xl shadow-lg">
+
+                    <div
+                        class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+
+                        <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold">
+
+                            Email
+
+                        </h3>
+
+                        <p class="text-gray-500 mt-2">
+
+                            info@ristorante.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Working Hours -->
+
+                <div class="flex items-start gap-5 bg-white p-6 rounded-3xl shadow-lg">
+
+                    <div
+                        class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0">
+
+                        <i class="fa-solid fa-clock text-yellow-500 text-2xl"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold">
+
+                            Opening Hours
+
+                        </h3>
+
+                        <p class="text-gray-500 mt-2">
+
+                            Mon - Sun : 10:00 AM - 11:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Right ================= -->
+
+            <form
+                class="bg-white rounded-3xl shadow-xl p-8 space-y-6">
+
+                <div>
+
+                    <label class="font-medium">
+
+                        Full Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        class="w-full mt-2 border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:border-[#D62828]">
+
+                </div>
+
+                <div>
+
+                    <label class="font-medium">
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="w-full mt-2 border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:border-[#D62828]">
+
+                </div>
+
+                <div>
+
+                    <label class="font-medium">
+
+                        Subject
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        class="w-full mt-2 border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:border-[#D62828]">
+
+                </div>
+
+                <div>
+
+                    <label class="font-medium">
+
+                        Message
+
+                    </label>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Write your message..."
+                        class="w-full mt-2 border border-gray-300 rounded-xl px-5 py-4 resize-none focus:outline-none focus:border-[#D62828]"></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full bg-[#D62828] text-white py-4 rounded-xl hover:bg-[#1F6F43] duration-300 font-semibold text-lg">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-[#1F2937] text-white pt-20 pb-8">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <!-- Logo -->
+
+            <div>
+
+                <a href="#"
+                    class="text-3xl font-extrabold">
+
+                    Ristorante
+
+                    <span class="text-[#D62828]">
+                        .
+                    </span>
+
+                </a>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    Authentic Italian cuisine made with fresh ingredients,
+                    handcrafted recipes, and a passion for unforgettable dining.
+
+                </p>
+
+                <!-- Social -->
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-[#374151] flex items-center justify-center hover:bg-[#D62828] duration-300">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-[#374151] flex items-center justify-center hover:bg-[#D62828] duration-300">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-[#374151] flex items-center justify-center hover:bg-[#D62828] duration-300">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                    <a href="#"
+                        class="w-12 h-12 rounded-full bg-[#374151] flex items-center justify-center hover:bg-[#D62828] duration-300">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div>
+
+                <h3 class="text-2xl font-bold mb-6">
+
+                    Quick Links
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li><a href="#" class="hover:text-[#D62828] duration-300">Home</a></li>
+
+                    <li><a href="#menu" class="hover:text-[#D62828] duration-300">Menu</a></li>
+
+                    <li><a href="#about" class="hover:text-[#D62828] duration-300">About</a></li>
+
+                    <li><a href="#gallery" class="hover:text-[#D62828] duration-300">Gallery</a></li>
+
+                    <li><a href="#contact" class="hover:text-[#D62828] duration-300">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Our Menu -->
+
+            <div>
+
+                <h3 class="text-2xl font-bold mb-6">
+
+                    Our Menu
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li>Pizza</li>
+
+                    <li>Pasta</li>
+
+                    <li>Lasagna</li>
+
+                    <li>Seafood</li>
+
+                    <li>Desserts</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="text-2xl font-bold mb-6">
+
+                    Contact
+
+                </h3>
+
+                <div class="space-y-5 text-gray-300">
+
+                    <p>
+
+                        <i class="fa-solid fa-location-dot text-[#D62828] mr-3"></i>
+
+                        Florence, Italy
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-phone text-[#D62828] mr-3"></i>
+
+                        +39 123 456 789
+
+                    </p>
+
+                    <p>
+
+                        <i class="fa-solid fa-envelope text-[#D62828] mr-3"></i>
+
+                        info@ristorante.com
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+
+        <div
+            class="border-t border-gray-700 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+
+            <p class="text-gray-400 text-center">
+
+                © 2026 Ristorante. All Rights Reserved.
+
+            </p>
+
+            <p class="text-gray-400 text-center">
+
+                Made with ❤️ using HTML, Tailwind CSS & JavaScript
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- Lightbox -->
+
+<div
+    id="lightbox"
+    class="fixed inset-0 bg-black/80 hidden items-center justify-center z-[999] p-5">
+
+    <!-- Close Button -->
+
+    <button
+        id="close-lightbox"
+        class="absolute top-8 right-8 text-white text-5xl hover:text-red-500 duration-300">
+
+        &times;
+
+    </button>
+
+    <!-- Image -->
+
+    <img
+        id="lightbox-img"
+        src=""
+        class="max-w-5xl w-full max-h-[90vh] rounded-2xl shadow-2xl object-contain">
+
+</div>
+
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
